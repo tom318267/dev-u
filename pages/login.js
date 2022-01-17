@@ -1,8 +1,67 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
+import axios from "axios";
+
+export const loginMethod = () => {
+  const isEmailValid = (text) => /@/.test(text);
+  const isPasswordValid = (password) => password.length >= 6;
+  const areFormFieldsValid = (email, password) =>
+    isEmailValid(email) && isPasswordValid(password);
+
+  return {
+    isEmailValid,
+    isPasswordValid,
+    areFormFieldsValid,
+  };
+};
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState(false);
+
+  const messageHandler = (messageStatus, messageData) => {
+    setStatus(messageStatus);
+    setMessage(messageData);
+  };
+
+  const submitForm = async (e) => {
+    try {
+      e.preventDefault();
+
+      const trimEmail = email.trim();
+
+      //  Email validation
+
+      if (!loginMethod().isEmailValid(trimEmail)) {
+        return messageHandler(true, "Invalid email");
+      }
+
+      if (!loginMethod().isPasswordValid(password)) {
+        return messageHandler(true, "Password is weak");
+      }
+
+      if (!loginMethod().areFormFieldsValid(trimEmail, password)) {
+        return messageHandler(true, "Fields required");
+      }
+
+      const data = {
+        email: trimEmail,
+        password,
+      };
+
+      const loginUser = await axios.post("https://reqres.in/api/login", data);
+
+      if (loginUser.status === 200) {
+        return messageHandler(false, "Login Successful");
+      }
+    } catch (error) {
+      return messageHandler(true, "Login failed");
+    }
+  };
+
   return (
     <Layout>
       <Link href="/">
@@ -27,11 +86,12 @@ const Login = () => {
           <img src="/images/or.svg" alt="" />
         </div>
 
-        <div className="flex flex-col w-full">
+        <form onSubmit={submitForm} className="flex flex-col w-full">
           <label className="font-mohave text-[20px]" htmlFor="email">
             Email
           </label>
           <input
+            onChange={(e) => setEmail(e.target.value)}
             id="email"
             className="border h-[45px] text-[18px] pl-2 font-mohave rounded-sm mb-4"
             type="email"
@@ -41,6 +101,7 @@ const Login = () => {
             Password
           </label>
           <input
+            onChange={(e) => setPassword(e.target.value)}
             id="password"
             className="border h-[45px] text-[18px] pl-2 rounded-sm"
             type="password"
@@ -57,6 +118,16 @@ const Login = () => {
             </label>
           </div>
 
+          <h4
+            className={`${
+              status
+                ? "text-red-500 mt-8 text-center font-mont font-semibold"
+                : "text-green"
+            }`}
+          >
+            {message}
+          </h4>
+
           <button className="font-mont mt-8 font-semibold bg-blue text-white w-[358px] h-[48px] rounded-full flex justify-center text-[18px] items-center gap-1">
             Log In
           </button>
@@ -71,7 +142,7 @@ const Login = () => {
             <h3>Don't have an account?</h3>
             <h3 className="text-blue cursor-pointer">Sign Up</h3>
           </div>
-        </div>
+        </form>
       </div>
     </Layout>
   );
