@@ -2,7 +2,7 @@ import React from "react";
 
 const TutorCard = ({ image, name }) => {
   return (
-    <div className="flex flex-col justify-center items-center mb-12">
+    <div className="flex flex-col justify-center items-center mb-12 lg:col-span-2">
       <img src={image} alt="" />
       <h2 className="font-mont font-semibold text-[20px] mt-4">{name}</h2>
       <p className="font-mohave text-[16px] w-[234px] text-center">

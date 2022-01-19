@@ -1,22 +1,17 @@
 import React from "react";
 
-const CourseCard = ({ image, title }) => {
+const CourseCard = ({ image, imageTablet, title }) => {
   return (
-    <div className="flex items-center h-[171px] w-[358px] mb-8 gap-3">
-      <div className="w-1/2 h-4/5">
-        <img src={image} alt="" />
-      </div>
-
-      <div className="w-1/2">
-        <h3 className="font-mont font-bold text-[20px]">{title}</h3>
-        <p className="font-mohave mb-1 text-[16px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare sit ut
-          dolor vel aenean eu auctor.
-        </p>
-        <button className="w-[126px] bg-blue text-white rounded-full drop-shadow-md h-[42px] cursor-pointer font-semibold font-mont">
-          More Info
-        </button>
-      </div>
+    <div>
+      <h1 className="font-mont font-bold text-xl">{title}</h1>
+      <p className="lg:w-[800px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim ultricies
+        facilisi vivamus ut interdum vulputate laoreet vestibulum. Mi magna
+        maecenas lacus vel faucibus netus.
+      </p>
+      <button className="h-[48px] bg-blue w-[166px] mb-[39px] drop-shadow-md font-semibold rounded-full font-mont text-white mt-4">
+        More Info
+      </button>
     </div>
   );
 };

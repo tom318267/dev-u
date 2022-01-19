@@ -14,7 +14,7 @@ const SignUp = () => {
           alt=""
         />
       </Link>
-      <div className="w-full flex flex-col justify-center items-center">
+      <div className="w-full md:w-[530px] md:mx-auto flex flex-col justify-center items-center">
         <div className="w-[309px] flex flex-col justify-center items-center">
           <h1 className="font-mont w-full font-bold text-center leading-[35px] text-[29px] mb-2">
             Sign up with us and get started on your career!
@@ -44,7 +44,7 @@ const SignUp = () => {
 
         <hr className="text-gray-300 my-[43px] w-10/12" />
 
-        <p className="font-mohave text-[20px] text-center">
+        <p className="font-mohave text-[20px] text-center mb-[43px]">
           Already have an account? <br />
           <span className="text-blue font-semibold cursor-pointer">Log In</span>
         </p>

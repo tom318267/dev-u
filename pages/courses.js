@@ -14,19 +14,23 @@ const Courses = () => {
           alt=""
         />
       </Link>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center mx-8 items-center">
         <h1 className="font-mont text-[29px] font-bold mb-10">Our Courses</h1>
 
-        <CourseCard image="/images/html.svg" title="HTML &amp; CSS" />
-        <hr className="text-gray-300 w-full mb-5" />
+        <CourseCard
+          image="/images/html.svg"
+          imageTablet="/images/html-courses-tablet.svg"
+          title="HTML &amp; CSS"
+        />
+        <hr className="text-gray-300 w-full mb-5 md:hidden" />
         <CourseCard image="/images/javascript.svg" title="Javascript" />
-        <hr className="text-gray-300 w-full mb-5" />
+        <hr className="text-gray-300 w-full mb-5 md:hidden" />
         <CourseCard image="/images/python.svg" title="Python" />
-        <hr className="text-gray-300 w-full mb-5" />
+        <hr className="text-gray-300 w-full mb-5 md:hidden" />
         <CourseCard image="/images/responsive.svg" title="Responsive Design" />
-        <hr className="text-gray-300 w-full mb-5" />
+        <hr className="text-gray-300 w-full mb-5 md:hidden" />
         <CourseCard image="/images/databases.svg" title="Databases" />
-        <hr className="text-gray-300 w-full mb-5" />
+        <hr className="text-gray-300 w-full mb-5 md:hidden" />
       </div>
 
       <Question />

@@ -14,7 +14,11 @@ const HtmlOverview = () => {
         />
       </Link>
 
-      <CourseOverview image="/images/htmlOverview.svg" title="HTML &amp; CSS" />
+      <CourseOverview
+        image="/images/htmlOverview.svg"
+        imageTablet="/images/html-overview-tablet.svg"
+        title="HTML &amp; CSS"
+      />
     </Layout>
   );
 };

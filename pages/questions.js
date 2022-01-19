@@ -31,7 +31,7 @@ const Questions = () => {
       {submitMessage()}
       <div>
         <img className="w-full" src="/images/questions.svg" alt="" />
-        <div className="flex flex-col justify-center items-center my-8">
+        <div className="flex flex-col justify-center items-center my-20">
           <h1 className="font-mont font-semibold text-[29px] mb-1">
             Questions?
           </h1>

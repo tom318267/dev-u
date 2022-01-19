@@ -4,10 +4,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "Tutor List", href: "/tutors", current: false },
+  { name: "Courses", href: "/courses", current: false },
+  { name: "Sign Up", href: "/sign_up", current: false },
 ];
 
 function classNames(...classes) {
@@ -32,7 +32,7 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                 <Link href="/" className="flex-shrink-0 flex items-center">
                   <img
                     className="cursor-pointer"
@@ -48,7 +48,7 @@ const Navbar = () => {
                         href={item.href}
                         className={classNames(
                           item.current ? " text-white" : "text-white",
-                          "px-3 py-2 rounded-md text-sm font-medium"
+                          "px-3 py-2 rounded-md text-md font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -58,11 +58,13 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <img
-                className="w-[33px] cursor-pointer"
-                src="/images/user.svg"
-                alt=""
-              />
+              <div>
+                <img
+                  className="w-[33px] cursor-pointer md:ml-8"
+                  src="/images/user.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
 

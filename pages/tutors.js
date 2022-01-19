@@ -14,10 +14,10 @@ const Tutors = () => {
           alt=""
         />
       </Link>
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="font-mont font-semibold text-[29px] mb-10">
-          Tutor List
-        </h1>
+      <h1 className="font-mont font-semibold text-[29px] mb-10 text-center">
+        Tutor List
+      </h1>
+      <div className="flex flex-col justify-center items-center md:grid md:grid-cols-2 lg:grid lg:grid-cols-4">
         <TutorCard image="/images/tutor1.svg" name="John Smith" />
         <TutorCard image="/images/tutor2.svg" name="Sarah Jones" />
         <TutorCard image="/images/tutor3.svg" name="Josh Williams" />

@@ -42,7 +42,7 @@ const Curriculum = ({ image, title }) => {
           <div className="flex justify-between px-8">
             <h3 className="font-semibold">Section 2</h3>
             <img
-              lassName="cursor-pointer"
+              className="cursor-pointer"
               src="/images/carrotDown.svg"
               alt=""
             />
