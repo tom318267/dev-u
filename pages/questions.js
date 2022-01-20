@@ -29,9 +29,12 @@ const Questions = () => {
   return (
     <Layout>
       {submitMessage()}
-      <div>
-        <img className="w-full" src="/images/questions.svg" alt="" />
-        <div className="flex flex-col justify-center items-center my-20">
+      <div className="flex flex-col w-full lg:flex-row lg:relative">
+        <div className="lg:w-1/2 lg:absolute lg:top-0 ">
+          <img className="w-full" src="/images/questions.svg" alt="" />
+        </div>
+
+        <div className="flex flex-col justify-center items-center my-20 lg:w-1/2">
           <h1 className="font-mont font-semibold text-[29px] mb-1">
             Questions?
           </h1>

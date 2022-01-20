@@ -9,7 +9,7 @@ const TutorCard = ({ image, name }) => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare sit ut
         dolor vel aenean eu auctor.
       </p>
-      <img className="mt-2" src="/images/tutorstars.svg" alt="" />
+      <img className="mt-2" src="/images/tutorStars.svg" alt="" />
     </div>
   );
 };
