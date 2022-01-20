@@ -33,7 +33,11 @@ const Navbar = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
-                <Link href="/" className="flex-shrink-0 flex items-center">
+                <Link
+                  href="/"
+                  passHref
+                  className="flex-shrink-0 flex items-center"
+                >
                   <img
                     className="cursor-pointer"
                     src="/images/logo.svg"

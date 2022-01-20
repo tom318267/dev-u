@@ -35,7 +35,7 @@ const Curriculum = ({ image, title }) => {
             <ol className="px-16 font-extralight list-decimal" type="1">
               <li>Introduction</li>
               <li>Getting Started</li>
-              <li>What you'll need</li>
+              <li>What you&apos;ll need</li>
             </ol>
           </div>
 
@@ -50,7 +50,7 @@ const Curriculum = ({ image, title }) => {
           <ol className="px-16 font-extralight list-decimal" type="1">
             <li>Introduction</li>
             <li>Getting Started</li>
-            <li>What you'll need</li>
+            <li>What you&apos;ll need</li>
           </ol>
 
           <div className="flex justify-between px-8">
@@ -64,7 +64,7 @@ const Curriculum = ({ image, title }) => {
           <ol className="px-16 font-extralight list-decimal" type="1">
             <li>Introduction</li>
             <li>Getting Started</li>
-            <li>What you'll need</li>
+            <li>What you&apos;ll need</li>
           </ol>
         </div>
       </div>

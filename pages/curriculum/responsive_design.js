@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 const ResponsiveDesign = () => {
   return (
     <Layout>
-      <Link href="/">
+      <Link href="/" passHref>
         <img
           className="mt-[41px] mb-[35px] ml-[16px] cursor-pointer"
           src="/images/mobileback.svg"

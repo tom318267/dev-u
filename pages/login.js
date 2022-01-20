@@ -64,7 +64,7 @@ const Login = () => {
 
   return (
     <Layout>
-      <Link href="/">
+      <Link href="/" passHref>
         <img
           className="mt-[41px] mb-[35px] ml-[16px] cursor-pointer"
           src="/images/mobileback.svg"
@@ -139,7 +139,7 @@ const Login = () => {
           <hr className="my-4" />
 
           <div className="text-[20px] text-center font-mohave">
-            <h3>Don't have an account?</h3>
+            <h3>Don&apos;t have an account?</h3>
             <h3 className="text-blue cursor-pointer">Sign Up</h3>
           </div>
         </form>
