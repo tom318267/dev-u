@@ -27,26 +27,6 @@ const Homepage = () => {
           </Link>
         </div>
       </div>
-      {/* <div className="flex flex-col md:flex-row justify-center md:mb-16">
-        <div className="w-full">
-          <img className="w-full" src="/images/homeImg.svg" alt="" />
-        </div>
-
-        <div className="flex flex-col justify-center items-center w-1/2 mx-auto md:p-20">
-          <h1 className="mt-[35px] font-mont leading-[35px] font-bold text-[29px] w-[271px] text-center">
-            Become a great developer!
-          </h1>
-          <p className="mx-[18px] text-[18px] text-center font-mohave w-[354px] my-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare sit
-            ut dolor vel aenean eu auctor.
-          </p>
-          <Link href="/sign_up">
-            <button className="h-[48px] bg-blue w-11/12 mb-[39px] drop-shadow-md font-semibold rounded-full font-mont text-white mt-4">
-              Join Us
-            </button>
-          </Link>
-        </div>
-      </div> */}
 
       <hr className="text-gray-300 md:hidden" />
 
