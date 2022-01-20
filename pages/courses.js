@@ -21,15 +21,32 @@ const Courses = () => {
           image="/images/html.svg"
           imageTablet="/images/html-courses-tablet.svg"
           title="HTML &amp; CSS"
+          params="html_overview"
         />
         <hr className="text-gray-300 w-full mb-5 md:hidden" />
-        <CourseCard image="/images/javascript.svg" title="Javascript" />
+        <CourseCard
+          image="/images/javascript.svg"
+          title="Javascript"
+          params="javascript_overview"
+        />
         <hr className="text-gray-300 w-full mb-5 md:hidden" />
-        <CourseCard image="/images/python.svg" title="Python" />
+        <CourseCard
+          image="/images/python.svg"
+          title="Python"
+          params="python_overview"
+        />
         <hr className="text-gray-300 w-full mb-5 md:hidden" />
-        <CourseCard image="/images/responsive.svg" title="Responsive Design" />
+        <CourseCard
+          image="/images/responsive.svg"
+          title="Responsive Design"
+          params="responsive_overview"
+        />
         <hr className="text-gray-300 w-full mb-5 md:hidden" />
-        <CourseCard image="/images/databases.svg" title="Databases" />
+        <CourseCard
+          image="/images/databases.svg"
+          title="Databases"
+          params="databases_overview"
+        />
         <hr className="text-gray-300 w-full mb-5 md:hidden" />
       </div>
 
