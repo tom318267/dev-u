@@ -16,6 +16,7 @@ const HtmlOverview = () => {
 
       <CourseOverview
         image="/images/htmlOverview.svg"
+        params="html"
         imageTablet="/images/html-overview-tablet.svg"
         title="HTML &amp; CSS"
       />

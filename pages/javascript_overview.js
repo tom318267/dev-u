@@ -17,6 +17,8 @@ const JavascriptOverview = () => {
       <CourseOverview
         image="/images/javascriptOverview.svg"
         title="Javascript"
+        params="javascript"
+        imageTablet="/images/javascript-tablet.svg"
       />
     </Layout>
   );

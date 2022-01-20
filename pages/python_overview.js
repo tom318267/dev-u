@@ -14,7 +14,12 @@ const PythonOverview = () => {
         />
       </Link>
 
-      <CourseOverview image="/images/pythonOverview.svg" title="Python" />
+      <CourseOverview
+        image="/images/pythonOverview.svg"
+        title="Python"
+        params="python"
+        imageTablet="/images/python-tablet.svg"
+      />
     </Layout>
   );
 };

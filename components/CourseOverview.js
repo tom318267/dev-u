@@ -1,7 +1,8 @@
+import Link from "next/link";
 import React from "react";
 import Question from "./Question";
 
-const CourseOverview = ({ image, title, imageTablet }) => {
+const CourseOverview = ({ image, title, imageTablet, params }) => {
   return (
     <>
       <div className="flex flex-col md:w-[629px] md:mx-auto justify-center items-center">
@@ -22,11 +23,11 @@ const CourseOverview = ({ image, title, imageTablet }) => {
             <img className="mb-8 md:mb-0" src="/images/stars.svg" alt="" />
           </div>
 
-          <div>
+          <Link href={`/curriculum/${params}`}>
             <button className="w-[234px] select-course h-[49px] bg-blue text-[18px] text-white font-mont font-semibold rounded-full">
               Select course
             </button>
-          </div>
+          </Link>
         </div>
       </div>
       <Question />

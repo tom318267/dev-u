@@ -17,6 +17,8 @@ const ResponsiveOverview = () => {
       <CourseOverview
         image="/images/responsiveOverview.svg"
         title="Responsive Design"
+        params="responsive_design"
+        imageTablet="/images/responsive-design-tablet.svg"
       />
     </Layout>
   );

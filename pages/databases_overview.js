@@ -14,7 +14,12 @@ const DatabasesOverview = () => {
         />
       </Link>
 
-      <CourseOverview image="/images/databases.svg" title="Databases" />
+      <CourseOverview
+        image="/images/databases.svg"
+        title="Databases"
+        params="databases"
+        imageTablet="/images/databases-tablet.svg"
+      />
     </Layout>
   );
 };
